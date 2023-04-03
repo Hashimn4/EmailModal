@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1500px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.1rem;
+}
+
+.logo__sub {
+    font-size: 1rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.page-header {
+    width: 100%;
+    background-color: gold;
+    padding: 25px 0 25px 25px;
+}
+
+.email-modal__container {
+    width: min(100%, 800px);
+    height: 450px;
+    position: relative;
+}
+
+.email-modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    
+}
+
+.email-modal--visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cta__container {
+    background-color: #318CE7;
+    height: 450px;
+    padding: 20px 15px 0 15px;
+    
+}
+
+.cta__title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin: 65px 0 15px 0;
+    color: white;
+}
+
+.cta__info {
+    line-height: 1.5rem;
+    text-align: left;
+    color: white;
+    margin-bottom: 25px
+}
+
+.image__container {
+    background-color: gold;
+    height: 450px;
+    width: 100%;
+}
+
+.email-modal__info {
+    display: flex;
+}
+
+.shoe-image {
+    width: 100%;
+    height: 100%;
+    margin: 105px auto 0 auto;
+}
+
+.shoe-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cta__form {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 5px;
+    margin: 5px 0 25px 0; 
+}
+
+.cta__form--error {
+    border: 1px solid red;
+}
+
+.cta__form input {
+    padding: 5px 0 5px 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    /* transition: 0.3s ease-in-out; */
+}
+
+.cta__form input:hover{
+    border: 1px solid blue;
+}
+
+.cta__form-btn {
+    background-color: #17B169;
+    padding: 5px 40px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.cta__form-btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.cta__error-message {
+    color: gold;
+    display: none;
+}
+
+.cta__error-message--active {
+    display: block;
+    
+}
+
+.cta__container .logo {
+    margin-left: 5px;
+    color: white;
+}
+
+.cta__decline-sign-up a{
+    color: white;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+.cta__decline-sign-up a:hover{
+    opacity: 1;
+}
+
+.email-modal__close-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.email-modal__close-btn i {
+    font-size: 2rem;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+}
+
+.email-modal__close-btn i:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.span {
+    opacity: 0.7;
+}
+
+.email-modal__thankyou {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: gold;
+    transition: 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.email-thank__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.email-thank__success {
+    visibility: visible;
+    opacity: 1;
+}
