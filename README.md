@@ -1,4 +1,4 @@
-Berry Email Modal
+<h1>Berry by Jenny Email Modal</h1>
 
 Link - https://berrymodal.netlify.app/
 
