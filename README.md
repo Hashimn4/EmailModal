@@ -1,4 +1,4 @@
-Email Modal
+Berry Email Modal
 
 Link - https://berrymodal.netlify.app/
 
